@@ -1,0 +1,2 @@
+# SastaStore
+All modern fashion
