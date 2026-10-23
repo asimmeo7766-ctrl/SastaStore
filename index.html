@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SastaStore – Quality Fashion, Sasta Price</title>
+<meta name="description" content="Clothes and shoes for men and women at budget prices. Cash on delivery across Pakistan.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">Cash on Delivery across Pakistan · Easy exchange</div>
+<header class="head">
+  <a class="logo" href="#">Sasta<span>Store</span></a>
+  <input id="q" type="search" placeholder="Search clothes &amp; shoes" aria-label="Search products">
+  <button id="cartBtn" class="cartbtn" type="button">Cart <b id="count">0</b></button>
+</header>
+
+<section class="hero">
+  <h1>Quality Fashion, Sasta Price</h1>
+  <p>Clothes and shoes for men and women. Pay when your order arrives.</p>
+  <a class="btn" href="#shop">Shop now</a>
+</section>
+
+<main id="shop">
+  <div class="bar">
+    <div id="tabs" class="tabs"></div>
+    <select id="sort" aria-label="Sort products">
+      <option value="">Sort: Featured</option>
+      <option value="lo">Price: low to high</option>
+      <option value="hi">Price: high to low</option>
+    </select>
+  </div>
+  <div id="grid" class="grid"></div>
+  <p id="empty" class="empty" hidden>No products found. Try another search.</p>
+</main>
+
+<section class="info" id="policies">
+  <div><h3>Cash on Delivery</h3><p>Pay in cash when the courier delivers. We confirm every order by WhatsApp or call before dispatch.</p></div>
+  <div><h3>Shipping</h3><p>Flat rate across Pakistan, free above the amount shown in your cart. Delivery time depends on your city.</p></div>
+  <div><h3>Exchange policy</h3><p>Wrong size? Exchange within 7 days if the item is unworn and tags are attached.</p></div>
+</section>
+
+<footer>
+  <p><b>SastaStore</b> · Clothes &amp; Shoes for Men and Women</p>
+  <p class="small">Sample products and prices shown for demonstration.</p>
+</footer>
+
+<div id="veil" class="veil"></div>
+<aside id="drawer" class="drawer" aria-hidden="true" aria-label="Shopping cart">
+  <div class="dh"><h2>Your cart</h2><button id="closeBtn" type="button" aria-label="Close cart">&times;</button></div>
+  <div id="items" class="items"></div>
+  <div id="foot" class="dfoot">
+    <div class="row"><span>Subtotal</span><span id="sub"></span></div>
+    <div class="row"><span>Shipping</span><span id="ship"></span></div>
+    <div class="row tot"><span>Total (pay on delivery)</span><span id="tot"></span></div>
+    <form id="form" autocomplete="on">
+      <input name="name" placeholder="Full name" required>
+      <input name="phone" type="tel" placeholder="Mobile number (03xx xxxxxxx)" required pattern="[0-9+\s\-]{10,16}">
+      <input name="city" placeholder="City" required>
+      <textarea name="address" placeholder="Full delivery address" rows="2" required></textarea>
+      <button class="btn wide" type="submit">Place order on WhatsApp</button>
+      <p class="small">Your order opens in WhatsApp so we can confirm it with you. Payment is cash on delivery.</p>
+    </form>
+  </div>
+</aside>
+<script src="app.js"></script>
+</body>
+</html>
